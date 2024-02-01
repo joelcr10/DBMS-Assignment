@@ -57,24 +57,26 @@ E-R DIAGRAM:
 DETAILED EXPLAINATION: 
 
 <b>Project Table (Project):</b> 
+<ul>
 
-projetc_id: Primary key, VARCHAR(10), not null - Unique identifier for the project. 
 
-project_name: VARCHAR(30), not null - Name of the project. 
+<li>projetc_id: Primary key, VARCHAR(10), not null - Unique identifier for the project. </li>
 
-start_date: DATE, not null - The start date of the project. 
+<li>project_name: VARCHAR(30), not null - Name of the project. </li>
 
-end_date: DATE - The end date of the project. 
+<li>start_date: DATE, not null - The start date of the project. </li>
 
-description: VARCHAR(100) - Description of the project. 
+<li>end_date: DATE - The end date of the project. </li>
 
-status: VARCHAR(20) - Status of the project. 
+<li>description: VARCHAR(100) - Description of the project. </li>
 
-project_created: DATE, not null - Date when the project was created. 
+<li>status: VARCHAR(20) - Status of the project. </li>
 
-project_created_by: VARCHAR(30), not null - User who created the project. 
+<li>project_created: DATE, not null - Date when the project was created. </li>
 
- 
+<li>project_created_by: VARCHAR(30), not null - User who created the project. </li>
+
+ </ul>
 
 <b>Task Table (Task):</b> 
 
