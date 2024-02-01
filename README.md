@@ -79,63 +79,65 @@ DETAILED EXPLAINATION:
  </ul>
 
 <b>Task Table (Task):</b> 
+<ul>
 
-task_id: Primary key, VARCHAR(10), not null - Unique identifier for the task. 
+ <li>task_id: Primary key, VARCHAR(10), not null - Unique identifier for the task. </li>
 
-project_id: Foreign key referencing Project.project_id, VARCHAR(10), not null - Identifier of the project to which the task belongs. 
+<li>project_id: Foreign key referencing Project.project_id, VARCHAR(10), not null - Identifier of the project to which the task belongs. </li>
 
-task_name: VARCHAR(30), not null - Name of the task. 
+<li>task_name: VARCHAR(30), not null - Name of the task. </li>
 
-task_description: VARCHAR(100) - Description of the task. 
+<li>task_description: VARCHAR(100) - Description of the task. </li>
 
-start_date: DATE, not null - The start date of the task. 
+<li>start_date: DATE, not null - The start date of the task. </li>
 
-end_date: DATE - The end date of the task. 
+<li>end_date: DATE - The end date of the task. </li>
 
-status: VARCHAR(20) - Status of the task. 
+<li>status: VARCHAR(20) - Status of the task. </li>
 
-task_created_by: VARCHAR(30), not null - User who created the task. 
+<li>task_created_by: VARCHAR(30), not null - User who created the task. </li>
 
- 
+</ul>
 
 <b>Users Table (Users):</b>
+<ul>
+<li>user_id: Primary key, VARCHAR(10), not null - Unique identifier for the user. </li>
 
-user_id: Primary key, VARCHAR(10), not null - Unique identifier for the user. 
+<li>username: VARCHAR(30), not null - User's username. </li>
 
-username: VARCHAR(30), not null - User's username. 
+<li>email: VARCHAR(30), not null - User's email address. </li>
 
-email: VARCHAR(30), not null - User's email address. 
+<li>password: VARCHAR(30), not null - User's password. </li>
 
-password: VARCHAR(30), not null - User's password. 
+<li>account_created: DATE, not null - Date when the user account was created. </li>
 
-account_created: DATE, not null - Date when the user account was created. 
-
- 
+ </ul>
 
 <b>TaskAssignment Table (TaskAssignment):</b> 
+<ul>
 
-assignment_id: Primary key, VARCHAR(10), not null - Unique identifier for the task assignment. 
+ <li>assignment_id: Primary key, VARCHAR(10), not null - Unique identifier for the task assignment.  </li>
 
-task_id: Foreign key referencing Task.task_id, VARCHAR(10), not null - Identifier of the task being assigned. 
+<li>task_id: Foreign key referencing Task.task_id, VARCHAR(10), not null - Identifier of the task being assigned.  </li>
 
-user_id: Foreign key referencing Users.user_id, VARCHAR(10), not null - Identifier of the user to whom the task is assigned. 
+<li>user_id: Foreign key referencing Users.user_id, VARCHAR(10), not null - Identifier of the user to whom the task is assigned.  </li>
 
-assignment_date: DATE, not null - Date when the task assignment was created. 
+<li>assignment_date: DATE, not null - Date when the task assignment was created.  </li>
 
-completion_date: DATE - Date when the task was completed. 
+<li>completion_date: DATE - Date when the task was completed.  </li>
 
-status: VARCHAR(20), not null - Status of the task assignment. 
+<li>status: VARCHAR(20), not null - Status of the task assignment.  </li>
 
- 
+ </ul>
 
 <b>UserRole Table (UserRole):</b> 
+<ul>
+<li>user_role_id: Primary key, VARCHAR(10), not null - Unique identifier for the user role. </li>
 
-user_role_id: Primary key, VARCHAR(10), not null - Unique identifier for the user role. 
+<li>user_id: Foreign key referencing Users.user_id, VARCHAR(10), not null - Identifier of the user associated with the role. </li>
 
-user_id: Foreign key referencing Users.user_id, VARCHAR(10), not null - Identifier of the user associated with the role. 
-
-user_role: VARCHAR(20), not null - Role assigned to the user. 
-
+<li>user_role: VARCHAR(20), not null - Role assigned to the user. </li>
+</ul>
  
 
  
