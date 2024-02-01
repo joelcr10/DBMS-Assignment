@@ -32,7 +32,7 @@ REQUIREMENT ANALYSIS:
 
 The requirement analysis involves understanding and delineating the needs, objectives, and functionalities related to effective time management for projects. Requirement analysis for the “Effective time management for projects” domain are: 
 
-Task Allocation Mechanism: Allocating Tasks to Teams: This reveals a specific requirement for a system that allows easy allocation and tracking of tasks within a team. 
+<b>Task Allocation Mechanism:</b> Allocating Tasks to Teams: This reveals a specific requirement for a system that allows easy allocation and tracking of tasks within a team. 
 
  
 
@@ -40,11 +40,11 @@ Task Allocation Mechanism: Allocating Tasks to Teams: This reveals a specific re
 
  
 
-Efficient Team Collaboration: Reducing Confusion, this points to a requirement for collaborative tools that enhance team communication and coordination. 
+<b>Efficient Team Collaboration:</b> Reducing Confusion, this points to a requirement for collaborative tools that enhance team communication and coordination. 
 
  
 
-Deadline Setting: This allows team to follow a timeline and complete the work before reaching the 	deadline. 
+<b>Deadline Setting:</b> This allows team to follow a timeline and complete the work before reaching the 	deadline. 
 
  
 
@@ -56,7 +56,7 @@ E-R DIAGRAM:
 
 DETAILED EXPLAINATION: 
 
-Project Table (Project): 
+<b>Project Table (Project):</b> 
 
 projetc_id: Primary key, VARCHAR(10), not null - Unique identifier for the project. 
 
@@ -76,7 +76,7 @@ project_created_by: VARCHAR(30), not null - User who created the project.
 
  
 
-Task Table (Task): 
+<b>Task Table (Task):</b> 
 
 task_id: Primary key, VARCHAR(10), not null - Unique identifier for the task. 
 
@@ -96,7 +96,7 @@ task_created_by: VARCHAR(30), not null - User who created the task.
 
  
 
-Users Table (Users): 
+<b>Users Table (Users):</b>
 
 user_id: Primary key, VARCHAR(10), not null - Unique identifier for the user. 
 
@@ -110,7 +110,7 @@ account_created: DATE, not null - Date when the user account was created.
 
  
 
-TaskAssignment Table (TaskAssignment): 
+<b>TaskAssignment Table (TaskAssignment):</b> 
 
 assignment_id: Primary key, VARCHAR(10), not null - Unique identifier for the task assignment. 
 
@@ -126,7 +126,7 @@ status: VARCHAR(20), not null - Status of the task assignment.
 
  
 
-UserRole Table (UserRole): 
+<b>UserRole Table (UserRole):</b> 
 
 user_role_id: Primary key, VARCHAR(10), not null - Unique identifier for the user role. 
 
